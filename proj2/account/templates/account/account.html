@@ -1,0 +1,17 @@
+<!doctype html>
+<html>
+<head>
+<meta charset=utf-8>
+</head>
+<body>
+<p>Users:</p>
+{% for user in users %}
+  <p>{{ user }}</p>
+  <blockquote>
+    <p>Full name: {{ user.fullName }}</p>
+    <p>Age: {{ user.userProfile2.age }}</p>
+  </blockquote>
+{% endfor %}
+
+</body>
+</html>
